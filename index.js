@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const ad_img = document.getElementById('advertising_img')
 
     let ad_video_resource = "https://www.youtube.com/embed/AgKKXag9mzs"
-    let ad_video_option = "?autoplay=1&mute=1&loop=1&playlist=AgKKXag9mzs"
+    let ad_video_option = "?autoplay=1&mute=1&loop=1&playlist=AgKKXag9mzs&vq=hd720"
     let ad_img_resource = "./white_logo.png"
     
 
