@@ -11,7 +11,7 @@ html, body { height: 100%; margin: 0; background-color: #090f2a;}
 
   /* ✅ 왼쪽/오른쪽 폭 비율은 여기서 네가 정하면 됨 */
   /* 예: 왼쪽 30% / 오른쪽 나머지 */
-  grid-template-columns: 30% 1fr;
+  grid-template-columns: 20% 1fr;
 }
 
 /* 왼쪽: 80/20 */
@@ -51,8 +51,8 @@ html, body { height: 100%; margin: 0; background-color: #090f2a;}
   left: 50%;
 
   /* cover 효과 */
-  width: 250%;
-  height: 250%;
+  width: 400%;
+  height: 400%;
 
   transform: translate(-50%, -50%);
   transform-origin: center center;
