@@ -1,0 +1,60 @@
+html, body { height: 100%; margin: 0; background-color: #090f2a;}
+
+.layout{
+  height: 100dvh;
+  width: 100vw;
+  box-sizing: border-box;
+  padding: 8px;
+  gap: 8px;
+
+  display: grid;
+
+  /* ✅ 왼쪽/오른쪽 폭 비율은 여기서 네가 정하면 됨 */
+  /* 예: 왼쪽 30% / 오른쪽 나머지 */
+  grid-template-columns: 30% 1fr;
+}
+
+/* 왼쪽: 80/20 */
+.ad{
+  display: grid;
+  gap: 8px;
+  grid-template-rows: 8fr 2fr; /* ✅ 80/20 */
+}
+
+/* 오른쪽: 4칸 x 2줄 */
+.right{
+  display: grid;
+  gap: 8px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  image-rendering: crisp-edges;
+}
+
+.ad-top, .ad-bottom, .cell{
+  /* border: 1px solid #ccc;
+  border-radius: 12px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:#090f2a
+}
+
+.ad-top {
+  position: relative;
+  overflow: hidden; /* 잘리는 부분 숨김 */
+}
+
+/* 핵심 */
+.ad-top iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  /* cover 효과 */
+  width: 250%;
+  height: 250%;
+
+  transform: translate(-50%, -50%);
+  transform-origin: center center;
+  border: 0;
+}
